@@ -2,6 +2,7 @@
   *ngFor="let task of tasks" 
   [task]="task"
   (onDeleteTaks)="deleteTask(task)"
+  (onToggleReminder)="toggleReminder(task)"
   >
   {{task.text}}
 </app-task-item>
